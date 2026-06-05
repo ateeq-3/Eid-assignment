@@ -25,9 +25,31 @@ I disagree with the idea of using "div" elements everywhere, even if the website
 
 ## Theory
 ### Question 1
->em< tag lay emphasis on a word or phrase. it adds meaning to the content while >i< tag is mainly used to change the style(italicize) in order for it to look different from the surrounding text. I will use >em< tag when I want to place emphasis on a word or phrase, therefore adding meaning to the word or phrase. screen readers may also change their tones when reading the text making it more acessible to ordinary users and the visually impaired. for the >i< tag I'll use it to denote a foreign word, scientific name and technical terms e.t.c
+~em~ tag lay emphasis on a word or phrase. it adds meaning to the content while >i< tag is mainly used to change the style(italicize) in order for it to look different from the surrounding text. I will use >em< tag when I want to place emphasis on a word or phrase, therefore adding meaning to the word or phrase. screen readers may also change their tones when reading the text making it more acessible to ordinary users and the visually impaired. for the >i< tag I'll use it to denote a foreign word, scientific name and technical terms e.t.c
 A real example is in the following phrase; "If you ever found yourself in an ebira community, <em>never</em> use the word <i>weguh</i>". This laid an emphasis on the word 'never' and also shows that the word 'weguh' is a non-english word
 ### Question 2
 Elements like >em<>, >strong<, >abbr< has specific screen reader behaviour. the >em< tag tells the screen reader to stress a word or phrase showing it's importance. the >strong< tag indicates that the content is highly important or urgent and screen readers often announces this with stronger emphasis or tone. >abbr< tag when provided with the full meaning using the 'title' attribute, the screen reader can read the full phrase instead of just the letters.
-The browser handles them in such way to communicate effectively to users especially the visually impaired
+The browser handles them in such way to communicate effectively to users especially the visually impaired.
 ### Question 3
+ARIA labels are special attributes that help screen readers describe elements on a webpage to users who cannot see the screen. for instance, if i should represent my search button with an icon, i had use an ARIA label to instruct the screen reader to read it as a search button, but if I build my button using div tag, it's better to change it to the correct semantic element rather than using ARIA labels.
+## Acessibility Reflection
+### Question 1
+I tested the zenith bank website, I was able to navigate through the main menu using the tab key. the login form had placeholder for password and account number. the buttons showed a black border outline when selected with keyboard or when hovered with mouse, making it easy to know where I was on the page. there's option for voice output and the chatbot is readily available on the homepage.
+## Product thinking
+### Question 1
+i will use H1 for my main heading which would be the name of the API. under the main heading i'll have sections using the H2 tag such as introduction, getting started and troubleshooting. inside those sections i'll use H3 tags for specific details. for example, under introduction, i'll use H3 tag to give a short description of the API. this will help the developers scan through it faster and navigate the page easily.
+
+
+# Class 3_______Modern Assets and Linking
+
+## Theory
+### Question 1
+first of all, i'll resize the image to the particular size needed on the website. then I'll convert it from png to a more modern format like WebP or AVIF. the reason for the conversion is that WebP and AVIF provide good image quality at a smaller size. I'll also test the image on different device to make sure of it quality and loading speed.
+### Question 2
+The srcset attribute allows a browser to choose the most suitable image size for a user's device. I'd use an srcset when my website is to be acessed by users with different screen size. 
+imagine a scenario whereby a website uses a 1000px hero image for all devices. Mobile users would have to download this large image even though their screen size is small. this waste data and increase loading time. using srcset, the browser can deliver appropriate image sizes to appropriate users. this improves loading speed and reduces data usage.
+### Question 3
+rel="no opener" is used together with target="_blank" to improve the security of a webpage. it prevents the newly opened page from acessing or changing the original webpage. It's just like you opening the door for a visitor without giving them the keys to your house. this helps protect users from harmful websites and attacks.
+## Engineering thinking
+### Question 1
+First of all, I will use lazy loading so that images are only loaded when the user scrolls near them. secondly, I will use modern image formats like AVIF to maximize image quality and minimize image size. thirdly, I will use a CDN (Content Delivery Network) to serve the images on multiple servers around the world, allowing users to download them from a nearby server. and finally, I'll use responsive image sizing to make sure that images are rendered in an appropriate size on different screens. 
