@@ -2,6 +2,7 @@
 
 ## Theory
 ### Question 1
+
 ![html framework](./HTML%20framework.jpeg)
 Understanding this process is important for a web developer because it helps in building faster and more efficient websites. If a developer knows how the browser renders a page, they can avoid unnecessary layout changes, reduce delays, and improve overall performance. It also makes debugging easier when elements appear in the wrong place or when a webpage feels slow and unresponsive.
 ### Question 2
@@ -25,7 +26,7 @@ I disagree with the idea of using "div" elements everywhere, even if the website
 
 ## Theory
 ### Question 1
-~em~ tag lay emphasis on a word or phrase. it adds meaning to the content while >i< tag is mainly used to change the style(italicize) in order for it to look different from the surrounding text. I will use >em< tag when I want to place emphasis on a word or phrase, therefore adding meaning to the word or phrase. screen readers may also change their tones when reading the text making it more acessible to ordinary users and the visually impaired. for the >i< tag I'll use it to denote a foreign word, scientific name and technical terms e.t.c
+"em" tag lay emphasis on a word or phrase. it adds meaning to the content while >i< tag is mainly used to change the style(italicize) in order for it to look different from the surrounding text. I will use >em< tag when I want to place emphasis on a word or phrase, therefore adding meaning to the word or phrase. screen readers may also change their tones when reading the text making it more acessible to ordinary users and the visually impaired. for the >i< tag I'll use it to denote a foreign word, scientific name and technical terms e.t.c
 A real example is in the following phrase; "If you ever found yourself in an ebira community, <em>never</em> use the word <i>weguh</i>". This laid an emphasis on the word 'never' and also shows that the word 'weguh' is a non-english word
 ### Question 2
 Elements like >em<>, >strong<, >abbr< has specific screen reader behaviour. the >em< tag tells the screen reader to stress a word or phrase showing it's importance. the >strong< tag indicates that the content is highly important or urgent and screen readers often announces this with stronger emphasis or tone. >abbr< tag when provided with the full meaning using the 'title' attribute, the screen reader can read the full phrase instead of just the letters.
@@ -55,17 +56,22 @@ rel="no opener" is used together with target="_blank" to improve the security of
 First of all, I will use lazy loading so that images are only loaded when the user scrolls near them. secondly, I will use modern image formats like AVIF to maximize image quality and minimize image size. thirdly, I will use a CDN (Content Delivery Network) to serve the images on multiple servers around the world, allowing users to download them from a nearby server. and finally, I'll use responsive image sizing to make sure that images are rendered in an appropriate size on different screens. 
 
 
-# Class 4
+# Class 4_______ Modern forms and User experience
 ## Theory
 ### Question 1
 Client-side validation helps the user know immediately when they enter something incorrectly in a form. For example, if someone types an email without "@", the form can show an error before it is submitted. This saves time and makes the form easier to use. Server-side validation happens after the form has been submitted. It checks the data again to make sure it is valid and safe. I think I'll need both because client-side validation improves the user experience, while server-side validation helps protect the website from incorrect or harmful data.
 ### Question 2
 The autocomplete attribute helps the browser remember and fill in information that a user has entered before. This makes forms faster to complete and reduces typing mistakes.
 Some common values I'll use are:
+
 NAME – used when asking for a user's full name during registration.
+
 EMAIL – used for email address fields in signup or login forms.
+
 TELEPHONE-NUMBER – used when collecting a phone number.
+
 STREET-ADDRESS – used in delivery or shipping forms.
+
 PASSWORD – used in login forms to help users fill in their passwords.
 
 ## Product thinking 
@@ -77,3 +83,11 @@ I would use a native select element when I only need users to choose from a simp
 ## Engineering thinking
 ### Question 1
 The password field will clearly tell users what is required before they create a password. For example, it will show a checklist that includes a minimum of 8 characters, one uppercase letter, one number, and one special symbol. As the user types, the checklist will update to show which requirements have been met. A strength meter will also indicate whether the password is weak, medium, or strong. There will be a button that allows users to show or hide the password so they can check what they typed. The button will be easy to use with both a mouse and a keyboard. all instructions will be clearly written to aid screen readers.
+
+
+# Class 5_______ The CSS Engine-- Box Model and Specificity
+## Theory
+### Question 1
+![Box model](./BOX-MODEL.jpeg)
+
+If one div has margin-bottom: 20px and the next div has margin-top: 30px, the space between them will be 30px, not 50px. this happens because of margin collapsing. when vertical margins touch each other the browser uses only the larger margin value instead of adding them together.
