@@ -53,3 +53,27 @@ rel="no opener" is used together with target="_blank" to improve the security of
 ## Engineering thinking
 ### Question 1
 First of all, I will use lazy loading so that images are only loaded when the user scrolls near them. secondly, I will use modern image formats like AVIF to maximize image quality and minimize image size. thirdly, I will use a CDN (Content Delivery Network) to serve the images on multiple servers around the world, allowing users to download them from a nearby server. and finally, I'll use responsive image sizing to make sure that images are rendered in an appropriate size on different screens. 
+
+
+# Class 4
+## Theory
+### Question 1
+Client-side validation helps the user know immediately when they enter something incorrectly in a form. For example, if someone types an email without "@", the form can show an error before it is submitted. This saves time and makes the form easier to use. Server-side validation happens after the form has been submitted. It checks the data again to make sure it is valid and safe. I think I'll need both because client-side validation improves the user experience, while server-side validation helps protect the website from incorrect or harmful data.
+### Question 2
+The autocomplete attribute helps the browser remember and fill in information that a user has entered before. This makes forms faster to complete and reduces typing mistakes.
+Some common values I'll use are:
+NAME – used when asking for a user's full name during registration.
+EMAIL – used for email address fields in signup or login forms.
+TELEPHONE-NUMBER – used when collecting a phone number.
+STREET-ADDRESS – used in delivery or shipping forms.
+PASSWORD – used in login forms to help users fill in their passwords.
+
+## Product thinking 
+### Question 1
+If I were building the form, I would make sure the user's progress is saved after each step. This way, if they lose their internet connection on step 4, they would not lose all the information they already entered. I would also show a message telling the user that the connection has been lost and that their progress has been saved. Once the internet is restored, they should be able to continue from the last completed step instead of starting the application again. I would also make sure that each step is checked before moving to the next one so that users can fix mistakes early. This would make the form easier and less frustrating to use.
+### Question 2
+I would use a native select element when I only need users to choose from a simple list of options. Examples include selecting a country, gender, department, or age range. Native selects are easy to create and work well on different devices. A custom dropdown would be useful when I need extra features that a normal select does not provide. For example, if users need to search through many options, display icons, or use a special design. In most cases, I would choose a native select because it is simpler and already works well. I would only use a custom dropdown when the project requires additional functionality.
+
+## Engineering thinking
+### Question 1
+The password field will clearly tell users what is required before they create a password. For example, it will show a checklist that includes a minimum of 8 characters, one uppercase letter, one number, and one special symbol. As the user types, the checklist will update to show which requirements have been met. A strength meter will also indicate whether the password is weak, medium, or strong. There will be a button that allows users to show or hide the password so they can check what they typed. The button will be easy to use with both a mouse and a keyboard. all instructions will be clearly written to aid screen readers.
