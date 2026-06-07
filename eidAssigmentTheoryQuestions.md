@@ -91,3 +91,17 @@ The password field will clearly tell users what is required before they create a
 ![Box model](./BOX-MODEL.jpeg)
 
 If one div has margin-bottom: 20px and the next div has margin-top: 30px, the space between them will be 30px, not 50px. this happens because of margin collapsing. when vertical margins touch each other the browser uses only the larger margin value instead of adding them together.
+### Question 2
+CSS specificity helps the browser decide which style should be applied when multiple styles target the same element. Generally, IDs have the highest priority, followed by classes, and then element selectors.
+Calculating specificity:
+
+.header nav ul li a = 1 class + 4 elements 
+
+nav a.active = 1 class + 2 elements
+
+.nav-links a = 1 class + 1 element 
+
+Since all three selectors have one class, we compare the number of element selectors. The first selector has the highest value.
+Therefore, .header nav ul li a would win because it is more specific than the other two selectors.
+### Question 3
+The cascade is the process the browser uses to decide which CSS rule should be applied when multiple rules affect the same element. It takes into account things such as specificity, source order, and importance. Understanding the cascade can save a developer from writing unnecessary CSS. For example, if a button is already receiving a style from a parent, there is no need to create any extra rules. Instead, I can check which rule is being applied and adjust it correctly. This keeps the code cleaner and easier to maintain.
